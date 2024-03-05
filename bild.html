@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bild</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <img alt="Bild">
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const bild = params.get('bild')
+    document.querySelector('img').src = `bilder/bild${bild}.jpg`
+  </script>
+</body>
+</html>
